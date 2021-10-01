@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<!-- the bootstrap responsive sises work by the most specific to least specific -->
+<!-- the order of specificity from least to most is col, sm, md, lg, and xl -->
+<!-- The rule is, when there are no more specific sizes present, the collumn will stack, unless you only have col without a responsive size -->
+<!-- The the stacking will always happen, even if there is a responsive size, paired with a non responsive col -->
+
+<style>
+  #blueborder { 
+    border: solid blue;
+  }
+
+  .row {
+    border: solid yellow;
+  }
+
+  .row div {
+    border: solid lightgreen;
+  }
+</style>
+
+<body class="container-fluid">
+  <div id="blueborder">
+    <div class="row">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+      <div class="col">4</div>
+      <div class="col">5</div>
+      <div class="col">6</div>
+      <div class="col">7</div>
+      <div class="col">8</div>
+      <div class="col">9</div>
+      <div class="col">10</div>
+      <div class="col">11</div>
+      <div class="col">12</div>
+    </div>
+    <div class="row">
+      <div class="col-4">4/12</div>
+      <div class="col">dynamic</div>
+      <div class="col-3">3/12</div>
+    </div>
+    <div class="row">
+      <div class="col">equal</div>
+      <div class="col">size</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-2 col-lg-10 col-xl-2">left</div>
+      <div class="col-sm-1 col-md-8 col-lg-2  col-xl-10">right</div>
+    </div>
+    <div class="row">
+      <div class="col col-lg-10 col-xl-2">bob</div>
+      <div class="col col-lg-2  col-xl-10">doug</div>
+    </div>
+    <div class="row">
+      <div class="col col-sm-6 col-md-2">jack</div>
+      <div class="col col-sm-1 col-md-8">jill</div>
+    </div>
+    <div class="row">
+      <div class="col offset-1">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+      <div class="col offset-3">4</div>
+      <div class="col">5</div>
+      <div class="col offset-2">6</div>
+    </div>
+    <div class="row">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+      <div class="col offset-sm-1 offset-md-2 offset-lg-3 offset-xl-4">4</div>
+      <div class="col">5</div>
+      <div class="col ">6</div>
+    </div>
+    <div class="row">
+      <div class="col order-3">first, but order-3</div>
+      <div class="col order-1">second but order-1</div>
+      <div class="col order-2">third but order-2</div>
+    </div>
+    <div class="row">
+      <div class="col order-sm-first order-md-last order-lg-first order-xl-last">sm-first, md-last, lg-first, xl-last</div>
+      <div class="col">2</div>
+      <div class="col ">3</div>
+    </div>
+  </div>
+
+  <ul>
+    <li>Responsive sizes only apply when the screen is their size. If there are no smaller responsive sizes, then the collumn will stack.</li>
+    <li>If there are no larger responsive sizes, then the that responsive size is used for all larger sizes.</li>
+    <li>Responsive sizes are used from the most specific to least. In this order. xl -> lg -> md -> sm -> col. </li>
+    <li> <b>col</b> is the the dynamic size. Its both the smallest and the largest because it can be any size depending on the other columns. Col will never automatically stack.</li>
+    <li>col is the same as xs. You never explicitly declare xs, its always implied by col, or its absence.</li>
+    
+  </ul>
+</body>
+
+</html>
