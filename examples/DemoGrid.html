@@ -102,6 +102,89 @@
     <li>col is the same as xs. You never explicitly declare xs, its always implied by col, or its absence.</li>
     
   </ul>
+
+
+  <div class="row row-content">
+    <div class="col-sm-6 mx-auto">
+        <div class="card">
+            <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+            <div class="card-body">
+                <form action="form" id="reserveForm"></form>
+                    <div class="row">
+
+                        <!--You should apply Bootstrap col classes to the label, as you have done before. 
+The label column should both take up exactly half of the row for small and up viewports. 
+The corresponding column div with the select should take up what's left of the row, without needing to explicitly use a number.
+When the viewport is XS, the label and the select columns should stack vertically.-->
+                        <div class="col">
+                        <label class="col"for="campers">Number of Campers</label>
+                        </div>
+                        <div class="col">
+                            <select class="col" name="numCampers" id="numCampers">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col col-sm-6"for="date">Date</label>
+                        <div class="col">
+                            <input class="col" type="date" id="date" name="date" placeholder="">
+                            </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                              <button class="btn btn-primary" type="submit">Search</button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+  <div class="row row-content align-items-center">
+      <div class="col-sm-4 order-sm-last col-md-3">
+          <h2 class="text-sm-right">Discover & Review</h2>
+      </div>
+      <div class="col">
+          <div class="media">
+              <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg"
+                  alt="breadcrumb trail thumbnail" />
+              <div class="media-body align-self-center">
+                  <h3>Our Campsites</h3>
+                  <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your
+                      own reviews!</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="row row-content align-items-center">
+      <div class="col-sm-4 order-sm-first col-md-3">
+          <h2 class="test-sm-left">Featured Campsites</h2>
+      </div>
+      <div class="col">
+          <div class="media">
+          </div class="media-body align-self-center">
+          <h3 class="mt-0 mb-1">React Lake Campground</h3>
+          <p class="d-none d-xs-block d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground
+              on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+              </div>
+          <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg"
+              alt="react-lake-thumb thumbnail" />
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
 </body>
 
 </html>

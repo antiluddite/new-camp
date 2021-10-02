@@ -31,13 +31,11 @@
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
-                <div>
-                    <div class="container">
-                        <a id="reserveForm"><button class="btn btn-large btn-info">Reserve Campsite</button></a>
-                    </div>
+                <div class="col-md-4 col-xl-2 mt-4">
+                    <a class="btn btn-lg btn-info text-nowrap" href="#reserveForm" role="button" class="text-wrap">Reserve Campsite</a>
                 </div>
-                <div>
-                </div>
+            </div>
+        </div>
     </header>
 
 
@@ -91,21 +89,20 @@
             <div class="col">
                 <div class="media">
                 </div class="media-body align-self-center">
-                <h3 class="mt-0 mb-1">React Lake Campground</h3>
+                <h3>React Lake Campground</h3>
                 <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground
                     on the shores of the pristine React Lake is a favorite for fly fishers.</p>
-                    </div>
-                <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg"
-                    alt="react-lake-thumb thumbnail" />
-                </div>
             </div>
+            <img class="d-flex img-thumbnail ml-3" src="img/react-lake-thumb.jpg" alt="react-lake-thumb thumbnail" />
         </div>
+    </div>
+    </div>
     </div>
 
     <div>
         <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
-                <h2 class="text-sm-right">Our Community Partners</h2>
+                <h2 class="text-sm-right col-md-3">Our Community Partners</h2>
             </div>
             <div class="col">
                 <div class="media">
@@ -120,20 +117,18 @@
         </div>
     </div>
 
-        <div class="row row-content">
-            <div class="col-sm-6 mx-auto">
-                <div class="card">
-                    <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
-                    <div class="card-body">
-                        <form action="form" id="reserveForm"></form>
-                            <div class="row">
+    <div class="row row-content">
+        <div class="col-sm-6 mx-auto">
+            <div class="card">
+                <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+                <div class="card-body">
+                    <form id="reserveForm">
 
-                                <!--You should apply Bootstrap col classes to the label, as you have done before. 
-The label column should both take up exactly half of the row for small and up viewports. 
-The corresponding column div with the select should take up what's left of the row, without needing to explicitly use a number.
-When the viewport is XS, the label and the select columns should stack vertically.-->
-                                <label class="col"for="campers">Number of Campers</label>
-                                <select class="col" name="numCampers" id="numCampers">
+                        <div class="row form-group">
+                            <label class="col-sm-6 col-form-label" for="campers">Number of Campers</label>
+                            <div class="col">
+                                <select class="form-control" name="numCampers" id="numCampers">
+                                    <option>Select...</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -142,22 +137,28 @@ When the viewport is XS, the label and the select columns should stack verticall
                                     <option value="6">6</option>
                                 </select>
                             </div>
-                            <div class="row">
-                                <label class="col col-sm-6"for="date">Date</label>
-                                <div class="">
-                                    <input class="col" type="date" id="date" name="date" placeholder="">
-                                    <div class="row">
-                                        <div class="col">
-                                            <button class="btn btn-primary" type="submit">Search</button>
-                                        </div>
-                                    </div>
-                                </div>
+                        </div>
+
+
+                        <div class="row form-group">
+                            <label class="col-sm-6 col-form-label" for="date">Date</label>
+                            <div class="col">
+                                <input class="form-control" class="col" type="date" id="date" name="date"
+                                    placeholder="">
                             </div>
                         </div>
-                    </div>
+                        <div class="row form-group">
+                            <div class="col">
+                                <button class="btn btn-primary" type="submit">Select</button>
+                            </div>
+                        </div>
                 </div>
+                </form>
             </div>
         </div>
+    </div>
+    </div>
+    </div>
 
     <footer class="site-footer">
         <div class="container">
