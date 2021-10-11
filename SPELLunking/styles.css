@@ -53,33 +53,28 @@ a, a:hover {
 
 .carousel {
     border: solid #5637DD;
-
+<<<<<<< HEAD
+}
+=======
 }
 
 
- 
-/*  body, html {
+/* for parallax*/
+body, html {
     height: 100%;
   }
   
   .parallax {
-  
+    /* The image used */
     background-image: url(https://projectcamping.com/wp-content/uploads/2019/06/campfire-burning-1200x900.jpg);
   
-   
+    /* Full height */
     height: 100%; 
   
-
+    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  */
-
-#carouselButton {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
-}
+>>>>>>> 056e96865d618fb1574c5d7a638d8fbb16404af3
