@@ -1,4 +1,4 @@
-$color-primary: #3046C5;
+$color-primary: #3046C5; ;
 $color-secondary: #5637dd;
 $color-pale: #CEC8FF;
 $color-mid: #901CAD;
@@ -49,13 +49,6 @@ header {
 .navbar {
     background-color: $color-mid;
 }
-
-/* for tab content that was removed when accordian was added in About Us page
-.tab-content {
-    border: 1px solid #DDD;
-    border-top: none;
-    padding: 10px;
-}   */
 
 a, a:hover {
     color: inherit;
